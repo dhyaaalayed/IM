@@ -1,0 +1,55 @@
+<form role="form" charset=utf-8>
+
+	<div class="form-group">
+		Anrede <select cam-variable-type="String" cam-variable-name="anrede"
+			name="anrede" required="true">
+			<option disabled selected value> </option> 
+			<option value="Herr">Herr</option>
+			<option value="Frau">Frau</option>
+		</select>
+
+	</div>
+
+	<div class="form-group">
+		<label for="vorname">Vorname</label> <input class="form-control" reauired type="text"
+			cam-variable-type="String" cam-variable-name="vorname" name="vorname" 
+			ng-minlength="2" ng-maxlength="20" placeholder="Vorname"
+			required="true" />
+	</div>
+
+	<div class="form-group">
+		<label for="nachname">Nachname</label> <input class="form-control" required type="text"
+			cam-variable-type="String" cam-variable-name="nachname" name="nachname"
+			ng-minlength="2" ng-maxlength="20" placeholder="Nachname"
+			name="nachname" required="true" />
+	 </div>
+    <div class="form-group">
+		<label for="Gebdat">Geburtsdatum</label> <input class="form-control"
+			cam-variable-type="String" cam-variable-name="geburtsdatum"
+			name="geburtsdatum" required="true" type="date" min="1978-01-01" max="2002-12-31" />
+	</div>
+	  
+       <div class="form-group">
+		<label for="email">Email-Adresse</label> <input class="form-control" required type="text"
+			cam-variable-type="String" cam-variable-name="email" name="email"
+			placeholder="Max.Mustermann@gmail.com" ng-minlength="2" ng-maxlength="40"
+			required="true" type="email" />
+	</div>
+	<div class="form-group">
+		Studiengang <select cam-variable-type="String"
+			cam-variable-name="studiengang" name="studiengang" required="true">
+			<option disabled selected value>  </option>
+			<option value="Geisteswissenschaften">Geisteswissenschaften</option>
+			<option value="Lehramt">Lehramt</option>
+			<option value="Sprachwissenschaften">Sprachwissenschaften</option>
+			<option value="Ingenieurwissenschaften">Ingenieurwissenschaften</option>
+            <option value="Naturwissenschaften">Naturwissenschaften</option>
+		</select>
+	</div>
+	
+	<div class="controls">
+		<label for="lebenslauf">Lebenslauf</label> 
+        <input type="file" cam-variable-name="lebenslauf"
+			cam-variable-type="File" cam-max-filesize="10000000" />
+	</div>
+	</form>
